@@ -1,0 +1,225 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* logo */
+#logo img{
+    height: 60px;
+    margin: 10px 10px;
+
+}
+
+/* navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 10px 10px;
+}
+
+#navbar ul li a:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url("../images/bg/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:25rem;
+    width: 100%;
+    z-index: -1;
+    opacity: .96;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    margin: 15px;
+    border-radius:20px;
+    border: none;
+    /* opacity: 0.99; */
+    font-size: 1.1rem;
+    background-color:gray;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+
+/* services container */
+#services-container{
+    position:relative;
+    bottom: 5rem;
+    z-index: -1;
+}
+#services-container h1{
+    padding: 0px 0px 15px 0px;
+    
+}
+
+#services{
+    display: flex;
+
+}
+#services .box{
+    padding: 34px;
+    margin: 0px 10px 50px 5px;
+    background-color: rgb(241, 238, 224);
+    border-radius: 30px;
+    border: 2px solid brown;
+}
+
+#services .box img{
+    height: 8rem;
+    display:block;
+    margin: auto;
+}
+
+/* client section */
+
+#client-section{
+    position: relative;
+    bottom: 3.6rem;
+    padding-top:5rem;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../images/bg/bg2.jpg") no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 128px;
+    padding: 5px 30px 5px 55px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("/images/bg/bg3.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box form{
+    width: 70%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,#contact-box textarea
+{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    border:none ;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+/* utilies classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    margin: 20px;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.center{
+    text-align: center;
+}
